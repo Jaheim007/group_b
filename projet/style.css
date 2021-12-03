@@ -1,7 +1,7 @@
 
 body{
 
-    background: rgba(0, 0, 0, 0.5) url(/account-settings.jpeg)no-repeat center;
+    background: rgba(0, 0, 0, 0.5) url(account-settings.jpeg)no-repeat center;
     background-blend-mode: darken;
     background-size: cover;
     height: 100vh;
