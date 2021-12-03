@@ -45,11 +45,12 @@ form {
 }
 #container h1{
 
-    width: 38%;
+    width: 107%;
     margin: auto;
     padding-bottom: 10px;
     color: #088f8f;
     text-decoration: underline;
+    text-align: center;
     
 }
 
@@ -71,8 +72,7 @@ input[type=text], input[type=password],input[type=email],input[type=newpass],inp
     font-size: 25px;
     font-weight: bold;
 }
-
-input[type=button] {
+#btn {
     background: #0996ff;;
     color: white;
     padding: 14px 20px;
