@@ -1,0 +1,96 @@
+
+body{
+
+    background: rgba(0, 0, 0, 0.5) url(/account-settings.jpeg)no-repeat center;
+    background-blend-mode: darken;
+    background-size: cover;
+    height: 100vh;
+    
+}
+.logo{
+    width: 100px;
+}
+.nom{
+    margin-left: 100px;
+    margin-top: -80px;
+    
+}
+
+
+#container{
+    
+    margin-top:10%;
+    position: sticky;
+    border: 1px ;
+    
+}
+.forms{
+    display:block;
+
+}
+
+form {
+    display: block;
+    margin: auto;
+    width: 30%;
+    height: 700px;
+    padding: 30px;
+    background-size: cover;
+    opacity: .8;
+    color: white;
+   border-radius: 5%;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#container h1{
+
+    width: 38%;
+    margin: auto;
+    padding-bottom: 10px;
+    color: #088f8f;
+    text-decoration: underline;
+    
+}
+
+
+input[type=text], input[type=password],input[type=email],input[type=newpass],input[type=confirm] {
+    width: 100%;
+    background-color: #a4a2a2;;
+    padding: 25px 30px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 18px;
+    
+}
+::placeholder{
+   text-align: center;
+    color: rgb(255,255,255);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+input[type=submit] {
+    background: #0996ff;;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 23px;
+    
+}
+
+
+
+/*
+
+input[type=submit]:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #53af57;
+}
+*/

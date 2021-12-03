@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="essai.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="carre">
+            <img src="LogoMakr-9CnvA4.png" alt="" class="bank">
+        </div>
+        <div class="message">
+            <marquee behavior="scroll" direction="left">
+                <h2 style="color: white;  font-style: italic;">Bienvenue la plateforme de Gestion des dépenses</h2>
+            </marquee>
+        </div>
+        <div class="user">
+            <div class="info">
+                <div class="logoUser">
+                    <img src="IMG_7623.PNG" alt="" width="30px">
+                </div> &nbsp;
+                <div class="nom">
+                    <h3>Nom User</h3>
+                </div>
+            </div>
+            <div class="bouton">
+                <div class="deco">
+                    <a href="#"><img src="turn off.png" alt="" width="50px" class="logoDeco" id="logoDeco"></a>
+                    
+                </div>
+                <div class="set">
+                    <a href=""><img src="settings icon.svg.png" alt="" width="30px" class="logoSet"></a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="nav">
+            <ul>
+                <li class="fond">
+                    <a href="#"><img src="plus.png" alt="" width="20px">&nbspEnregistrer</a>
+                </li>
+                <li>
+                    <a href="../anicet/index.html">Depenses</a>
+                </li>
+                <li>
+                    <a href="#">Recette</a>
+                </li>
+                <li class="fond">
+                    <a href="#"> <img src="clipboard.png" alt="" width="20px"> Operations</a>
+                </li>
+                <li class="">
+                    <a href="../anicet/indexListe.html">Liste Depenses</a>
+                </li>
+                <li class="">
+                    <a href="#">Liste Recettes</a>
+                </li>
+            </ul>
+            <button class="btn"><img src="money-bag.png" alt="" width="20px">&nbsp
+                Solde
+            </button>
+        </div>
+
+        <!--Changement de pages-->
+        <div class="content">
+
+        </div>
+        
+    </div>
+
+    <div class="modal" id="id01">
+        <form action="" class="modal-content">
+            <div class="cont">
+                <h1>Decconnexion</h1>
+                <p>Voulez-vous vous deconnecter?</p>
+            </div>
+            <div class="clearfix">
+                <button type="button" class="cancelbtn" id="annuler">Annuler</button>
+                <button type="button" class="decobtn" id="deconnect">Deconnecter</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+<script>
+    
+
+
+
+    
+// Modal
+let modal = document.getElementById('id01');
+let deco = document.getElementById('logoDeco')
+let annuler = document.getElementById('annuler')
+let deconnect = document.getElementById('deconnect');
+logoDeco.addEventListener('click',()=>
+{
+modal.style.display='block';
+});
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+deconnect.addEventListener('click',()=>{
+    location.href='../connexion.html'
+});
+annuler.addEventListener('click',()=>{
+    modal.style.display='none';
+})
+
+
+</script>
+</html>

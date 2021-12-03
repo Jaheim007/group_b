@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion-dépenses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <!-- choix de la charge -->
+    <div class="typeCharges">
+        <div class="radioDiv">
+            <label>Charges fixes</label>
+                <input type="radio" name="charge" id="fixe" value="ChargeFixe">
+        </div>
+        <div class="radioDiv">
+             <label>Autres charges</label>
+             <input type="radio" name="charge" id="autre" value="autreCharge">
+        </div>
+       
+    </div><hr>
+    <!-- alerte -->
+    <p style="color: red;" textAlign="center" id="erreur"></p>
+    
+    <!-- Formulaire des dépenses-->
+    <div class="conteneur">
+     
+        <form action="#" post=""name="enregistrer1" id="form1">
+           
+            <div class="conteneur-0">
+                <div class="conteneur-1">
+                    <div class="col-25">
+                            <label for="charges">Charge</label>
+                    </div>
+                    <div class="col-75">
+                        <select name="charges" id="charges">
+                            <option value="">--choisir charge--</option>
+                            <option value="cie">CIE</option>
+                            <option value="sodeci">SODECI</option>
+                            <option value="salaire">Salaire</option>
+                            <option value="internet">Internet</option>
+                        </select>
+                    </div>
+            
+                </div>
+                
+                <div class="conteneur-1">
+                    <div class="col-25">
+                        <label for="date">Date</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" name="date" id="date" required>
+                    </div>
+                </div>
+                <div class="conteneur-1">
+                    <div class="col-25">
+                        <label for="libelle" >Libellé</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="libelle" id="libelle" placeholder="Libellé" required>
+                    </div>
+                </div>
+                <div class="conteneur-1">
+                    <div class="col-25">
+                        <label for="montant">Montant</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" name="montant" id="montant" placeholder=" Montant" required>
+                    </div>
+                </div>
+                <div class="conteneur-11">
+                    <div class="col-75">
+                        <input type="submit" name=""  value="Envoyer" id="subId">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- formulaire des autres charges -->
+        <form action="#" method=""  name="enregistrer2" id="form2">
+            <div class="conteneur-0">
+                <div class="conteneur-1">
+                    <div class="col-25">
+                        <label for="date1">Date</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" name="date1" id="date11" required>
+                    </div>
+                </div>
+                <div class="conteneur-1">
+                    <div class="col-25">
+                        <label for="libelle1" >Libellé</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="libelle1"  placeholder="Libellé" id="libelle11" required>
+                    </div>
+                </div>
+                <div class="conteneur-1">
+                    <div class="col-25">
+                        <label for="montant1">Montant</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" name="montant1" placeholder="Montant"  id="montant11" required>
+                    </div>
+                </div>
+                <div class="conteneur-11">
+                    <div class="col-75">
+                        <input type="submit" value="Envoyer" name="" id="subId">
+                    </div>
+                </div>
+        </form>
+    </div>
+
+    <!-- section du tableau -->
+    
+   
+    <h1 id="h1">Gestion des dépenses</h1>
+    
+    
+    <br><br>
+    <div class="divTab1">
+        <table class="tab1">
+            <thead id="th2">
+                <tr > 
+                    <th colspan="6">Charges fixes</th>
+                </tr>
+                <tr id="th3"> 
+                    <th >Num</th>
+                    <th >Date</th>
+                    <th>Libellé</th>
+                    <th>Montant</th>
+                    <th>Modifier</th>
+                    <th>supprimer</th>
+                </tr>
+            </thead>
+            <tbody class="td1">
+
+            </tbody>
+            <tfoot>
+                <tr id="total">
+                    <td class="idTotal" colspan="3">Total</th>
+                    <td class="somTotale">50.000 frs</td>
+                </tr>
+            </tfoot>
+                
+        </table>
+
+    </div><br>
+
+    <div class="divTab2">
+        <table class="tab2">
+            <thead id="th2">
+                <tr> 
+                    <th colspan="6">Autres Charges</th>
+                </tr>
+                <tr id="th3"> 
+                    <th rowspan="">Num</th>
+                    <th >Date</th>
+                    <th>Libellé</th>
+                    <th>Montant</th>
+                    <th>Modifier</th>
+                    <th>supprimer</th>
+                </tr>
+            </thead>
+            <tbody class="td11" >
+
+
+            </tbody>    
+                <tr id="total">
+                    <td class="idTotal" colspan="3">Total</th>
+                    <td class="somTotale">90.000 frs</td>
+                </tr>
+        </table> 
+    </div>
+    
+    <div id="lol"></div>
+</body>
+<script src="script.js"></script>
+</html>

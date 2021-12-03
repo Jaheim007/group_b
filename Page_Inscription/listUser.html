@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="list.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <td>N°</td>
+            <td>USER NAME</td>
+            <td>NOM ET PRENOMS</td>
+            <td>ADRESSE MAIL</td>
+            <td>MOT DE PASSE</td>
+            <td>CONFIRMATION MOT DE PASSE</td>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+</body>
+<script>
+    setInterval(()=>{
+      function Afficher(){
+  var list = document.querySelector('tbody');
+  list.innerHTML ='';
+  let id = 1;
+  JSON.parse(localStorage.getItem('inscription')).forEach(data => {
+      list.innerHTML+=`
+      <tr>
+        <td>
+            ${id}
+            </td>
+          <td>
+              ${data.user}
+          </td>
+  
+          <td>
+              ${data.nom}
+          </td>
+  
+          <td>
+              ${data.email}  
+            </td>
+          <td>
+              ${data.password1}  
+            </td>
+          <td>
+              ${data.password2}  
+            </td>
+  `;
+id++
+  });
+
+}; Afficher();
+    },10);
+     
+
+   
+
+   
+</script>
+</html>

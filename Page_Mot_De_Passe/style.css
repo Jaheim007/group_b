@@ -1,0 +1,108 @@
+body
+{
+    background: rgba(0,0,0.4,0.6) url(forgot.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+#image{
+    width: 100px;
+    margin-left: 150px;
+}
+
+.title
+{
+    color: #088f8f;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.sous-title
+{
+    color: #088f8f;
+    text-align: center;
+}
+
+.mot-de-passe input
+{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #A4A2A2 ;
+    padding:10px;
+    width: 75%;
+
+}
+
+::placeholder
+{
+    color: #fff;
+}
+
+#btn{
+    color: #fff;
+    background-color: #0096ff;
+    outline: none;
+    border-color: #0096ff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0px 20px 40px;
+    width: 80%;
+    cursor: pointer;
+}
+
+.container{
+    width: 450px;
+    padding: 10% 0 0 0;
+    margin: auto;
+}
+
+.form{
+    background-color: #fff;
+    height: 50vh;
+    opacity: 0.8;
+    padding: 20px;
+}
+
+#Email{
+    margin: 50px 0px 20px 40px;
+}
+
+#nom{
+    margin: 10px 0px 20px 40px;
+}
+
+.incorrect{
+    width: 450px;
+    padding: 15% 0 0 0;
+    margin: auto;
+}
+.message-background{
+    background-color: #fff;
+    height: 25vh;
+    opacity: 0.8;
+    padding: 20px ;
+    
+}
+
+
+#btn1{
+    padding: 15px;
+    background-color: #0096ff;
+    color: #fff;
+    margin-left: 100px;
+    outline: none;
+    border-radius: 15px;
+    border-color: #0096ff;
+    cursor: pointer;
+    
+}
+
+#message{
+    text-align: center;
+    color: #088f8f;
+    margin-top: 25%;
+    font-size: 19px;
+}

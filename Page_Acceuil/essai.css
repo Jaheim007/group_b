@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.bank{
+    width: 100px;
+    margin-top: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.header{
+    height: auto;
+    width: 100%;
+    background-color: #4650A6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.user{
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    line-height: 0; 
+    color: white;
+    padding: 0;
+    
+}
+
+.user h3{
+    margin-top: 14px;
+}
+
+logoUser{
+    width: 20px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 10px;
+}
+.bouton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.logoSet{
+    margin-top: 12px;
+}
+.content{
+  width: 100%;
+  height: 1000px;
+  background:rgb(0, 0 , 0.4, 0.7) url("teamwork background.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+}
+ul{
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 100px;
+    text-align: center;
+    
+}
+li{
+    line-height: 60px;
+    border-bottom: 1px solid rgb(43, 43, 148);
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left:10px ;
+    font-weight: 400;
+    display: block;
+}
+
+ul li a:hover{
+    padding-right: 10px;
+    transition: 0.3s;
+}
+
+.fond{
+    background-color: #4650A6;
+}
+
+.container{
+    display: flex;
+
+
+}
+.nav{
+    width: 300px;
+    background-color: gainsboro;
+}
+
+
+.btn{
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    color: white;
+    background-color: #4650A6;
+    border: 0;
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 200px;
+    margin-left: 50px;
+}
+
+.modal{
+    display: none;
+    box-sizing: border-box;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    padding-top: 50px;
+}
+
+button{
+    background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+button:hover {
+    opacity:1;
+  }
+
+  .cancelbtn, .decobtn {
+    float: left;
+    width: 50%;
+  }
+
+  .cancelbtn {
+    background-color: #ccc;
+    color: black;
+  }
+
+  .decobtn {
+    background-color: #f44336;
+  }
+
+  .cont {
+    padding: 16px;
+    text-align: center;
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+
+  .close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+
+  .close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .cont h1{
+      color: #4650A6;
+  }

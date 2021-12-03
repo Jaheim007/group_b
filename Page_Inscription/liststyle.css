@@ -1,0 +1,76 @@
+body
+{
+    background: rgba(0,0,0.4,0.5) url(working.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.form-present
+{
+    width: 360px;
+    padding: 10% 0 0 0 ;
+    margin: auto; 
+}
+
+#image
+{
+    width: 100px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+#inscrire
+{
+    text-align: center;
+    color: rgb(28, 241, 9);
+}
+
+.signup
+{
+    background: #ffff;
+    opacity: 0.8;
+    height: 50vh;
+    border-radius: 15px;
+    width: 300px;
+    padding: 50px;
+}
+
+.signup input
+{ 
+    background-color:#A4A2A2;
+    color: #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+    border-color: #A4A2A2;
+    outline: none;
+    border: none;
+}
+table{
+    color: #A4A2A2;
+    align-items: center;
+    position: absolute;
+
+}
+table tr td{
+    border-bottom: 1px solid white;
+    align-items: center;
+    
+}
+
+#btn
+{
+    padding: 10px;
+    margin-left: 10px;
+    background-color: rgb(28, 241, 9);
+    color: #fff;
+    border-radius: 15px;
+    width: 100%;
+}
+
+::placeholder
+{
+    color: #fff;
+}

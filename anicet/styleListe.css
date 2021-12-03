@@ -1,0 +1,125 @@
+:root{
+    --bg-color:#005baf;
+    --bg-color1:#0050c7;
+    --th1_td_bg-color:rgb(151, 148, 148);
+    --th2_td_bg-color:#e4dada;
+    /* --th3-color:rgb(224, 196, 196); */
+    --td_bg-color:rgb(39, 36, 36);
+}
+body{
+    margin:0;
+    background: rgba(0,0,0.4,0.5) url("../images/business background.jpg") no-repeat center ;
+    background-size: cover;
+    background-blend-mode: darken;
+   
+    min-height: 100vh;/*  */
+    
+}
+/* header */
+
+/* tableau  des depenses*/
+div{
+    display: flex;
+    justify-content: center;
+   
+}
+.div1{
+    display: none;
+}
+.div2{
+    display: none;
+}
+#th1{
+    text-align: center;
+    width: 100%;
+    padding-top: 2vh;
+    height: 9vh;
+    background-color: var(--bg-color);
+    font-size: 20px;
+    height:10vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+table{
+    
+    margin: 20px 5px;
+    
+    border-collapse: collapse;
+    text-align: auto;
+    /* background-color: ; */
+    width: 100%;
+   
+   
+    
+    
+}
+.tbody1,.tbody2{
+    background-color: white;
+    color: black;
+    height: 10px;
+}
+
+td,th{
+    border: 1px solid black;
+   width: 10px;
+    padding-top: 5px;
+    text-align: center;
+    
+}
+#th1{
+    
+    height: 10px;
+    background-color: var(--bg-color);
+    font-size: 20px;
+    height: 7vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+#h1 th h2, #th2{
+    color: white;
+}
+#th2{
+    height: 50px;
+    font-size: 23px;
+    height: 8vh;
+    background-color: var(--th1_td_bg-color);
+}
+#th3{
+    background-color: var(--th2_td_bg-color);
+    color: #94424e;
+    height: 3vh;
+}
+td{
+   
+    color: rgb(8, 8, 8);
+    font-size: 20px;
+}
+.td1{
+    background-color: white;
+    color: black;
+    height: 10px;
+}
+/* secondaire */
+
+.num{
+    background-color: rgb(105, 174, 243);
+}
+#tablHeadId{
+    width: 200px;
+}
+#total{
+    background-color: var(--bg-color);
+    color: red;
+    height: 5vh;
+}
+.idTotal{
+    text-align: start;
+    color: white;
+    font-size:medium;
+    left:30px;
+
+}
+.somTotale,.somTotale1{
+    color: red;
+    background-color:dodgerblue;
+}

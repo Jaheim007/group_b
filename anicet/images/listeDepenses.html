@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesDepenses.css">
+    <title>Liste dépenses</title>
+</head>
+<body>
+   
+    <h2 id="th1">Liste des dépenses</h2> 
+        
+    <div class="choix">
+        <div>
+            <label>Charges fixe </label>
+            <input type="radio" name="checkCharge" id="fixe" value="fixe">
+        </div>
+        <div>
+            <label>Autres charges</label>
+            <input type="radio" name="checkCharge" id="autre" value="autre">
+        </div>
+    </div>
+        
+
+    <!-- section du tableau -->
+
+    <div class="div1">
+        <table>
+            <thead>
+                <tr id="th2">
+                    <th colspan="6">Charges fixes</th>
+                    
+                </tr>      
+                <tr id="th3">
+                    <th class="num">Num</th>
+                    <th>Date</th>
+                    <th>Libellé</th>
+                    <th>Montant</th> 
+                    <th>Modifier</th>
+                    <th>supprimer</th>
+                </tr>
+            </thead>
+            <tbody class="tbody1">
+                <tr>
+
+                </tr>
+                    
+            </tbody>
+            <tfoot>
+                <tr id="total">
+                    <th class="idTotal" colspan="3">Total</th>
+                    <td class="somTotale">50.000 frs</td>
+                </tr>
+            </tfoot>
+                
+        </table>
+        
+    </div>
+    <!--  -->
+    <div class="div2">
+        <table>
+            <thead>
+                <tr id="th2">
+                    <th colspan="6">Autres Charges</th>
+                </tr>
+                <tr id="th3"> 
+                    <th class="num">Num</th>
+                    <th>Date</th>
+                    <th>Libellé</th>
+                    <th>Montant</th>
+                    <th>Modifier</th>
+                    <th>supprimer</th>
+                </tr>
+            </thead>
+            <tbody class="tbody2">
+                <tr>
+
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr id="total">
+                    <td class="idTotal" colspan="3">Total</th>
+                    <td class="somTotale">....</td>
+                    </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+<script src="scriptListe.js"></script>
+</html>

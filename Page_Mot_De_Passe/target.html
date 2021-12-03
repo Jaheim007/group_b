@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Des Despenses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="mot-de-passe">
+            <form class="form" autocomplete="off">
+                <img src="Logo.png" id="image">
+                <h1 class="title">Mot de passe oublié?</h1>
+                <p class="sous-title">Entrez votre email et nom d'utilisateur pour plus d'instructions.</p>
+                <input type="email" name="email" placeholder="Email" id="Email" required>
+                <input type="text" name="username" placeholder="Nom d'utilisateur" id="nom" required>
+                <button id="btn">Envoyer</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="incorrect">
+        <div class="message-background" >
+            <form action="../connexion.html" >
+            <p id="message">Un message a été envoyé à votre adresse email.</p>
+            <button type="submit" id="btn1">Retourner à la page d'accueil</button> 
+            </form>    
+        </div>    
+    </div>
+    
+
+</body>
+<script src="jscript.js"></script>
+</html>

@@ -1,0 +1,100 @@
+@font-face{
+    font-family: myFisrtFont;
+    src: url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap');
+}
+body{
+    background: rgba(0,0,0.4,0.5) url(connectionpage.jpeg);
+    height: 100vh; 
+    background-size: cover;
+    background-blend-mode: darken;
+    font-family: myFirstFont;
+
+}
+
+#logo{
+    width: 100px;
+    margin-left: 90px;
+}
+
+.login-page{
+    width: 360px;
+    padding: 10% 0 0 0;
+    margin: auto;
+}
+
+.register{
+    position: relative;
+    background: #ffffff;
+    opacity: 0.9;
+    height: 50vh;
+    border-radius: 15px;
+    max-width: 75%;
+    margin: 0 auto 100px;
+    padding: 45px;
+}
+
+.register input{
+    outline: none;
+    border: none;
+    background: #A4A2A2;
+    color: #ffffff;
+    margin-bottom: 15px;
+    margin-right: 50px;
+    border: none;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.register button{
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #0096ff; 
+    border-color: #0096ff;
+    width: 280px;
+    outline: none;
+}
+
+.register button:hover{
+    color: #0096ff; 
+    background-color:#ffffff;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+::placeholder{
+    color: #ffffff;
+    text-align: center;
+}
+#error{
+    color: red;
+
+}
+
+#message{
+    color: green;
+}
+
+.title
+{
+    color: #088f8f;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+.password{
+    color: #088f8f;
+    margin-left: 70px;
+}
+
+#inscrire{
+    margin-left: 100px;
+    color: #088f8f;
+    font-size: 18px;
+    text-decoration: none;
+}
